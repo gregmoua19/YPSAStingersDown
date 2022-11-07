@@ -1,6 +1,22 @@
 {
-  "rules": {
-    ".read": "now < 1669276800000",  // 2022-11-24
-    ".write": "now < 1669276800000",  // 2022-11-24
+    "rules": {
+      "test": {
+        "$uid": {
+          ".read": true,
+          ".write": "auth.uid != null"
+        }
+      },
+      "data":{
+        "$uid":{
+          ".read": true,
+          ".write": "auth.uid != null"
+        }
+      },
+      "students":{
+        "$uid":{
+          ".read": true,
+          ".write": "auth.uid != null"
+        }
+      }
+    }
   }
-}
