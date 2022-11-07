@@ -1,0 +1,192 @@
+.poppup-container{
+  display:grid;
+  height: 100%;
+  width:100%;
+  grid-template-rows: 10% 80% 10%;
+  
+}
+
+.poppup-header{
+  grid-row: 1/2;
+  background-color:#FFFFFF;
+  align-items: center;
+  display:flex;
+  border-color: black;
+  height:100%;
+}
+
+.poppup-content{
+  grid-row: 2/3;
+  background-color: #F9FAFA;
+  display:grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 23% 20% 30% 10%;
+  padding: 10px;
+  resize: none;
+  height: 90%;
+}
+
+.first-row{
+  grid-row: 1/1;
+  grid-column: 1/3;
+  background-color: #F9FAFA;
+  resize: none;
+  
+}
+.buttons-row{
+  display:flex;
+  background-color: #F9FAFA;
+  height:35px;
+  resize: none;
+}
+
+.second-row{
+  grid-row:3/3;
+  display: flex;
+  justify-content: space-between;
+  gap:25%;
+  resize: none;
+}
+.input-area{
+
+}
+  
+.third-row{
+  grid-row:4/4;
+  display:flex;
+  justify-content: space-between;
+  gap:35%;
+  resize: none;
+}
+.poppup-footer{
+  grid-row: 3;
+  background-color: #FFF;
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px;
+  gap: 15px;
+  resize: none;
+}
+
+.button-box{
+  display: flex;
+  gap:10px;
+  resize: none;
+}
+
+.button{
+  height:35px;
+  width:75px;
+  resize: none;
+}
+
+#cancel-button{
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #F9FAFA;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgb(18, 16, 16);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 2rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  
+}
+
+#add-button{
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 2rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+#add-button:hover,
+#add-button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+
+.button-2{
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width:fit-content;
+  resize: none;
+}
+.button-2:focus {
+  box-shadow: #EA964C 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+  border-color:#EA964C;
+  transform:scale(.93);
+}
+
+.button-2:active {
+  background-color: #F7F7F7;
+  border-color:#EA964C;
+  transform: scale(.96);
+}
+
+.button-2:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}

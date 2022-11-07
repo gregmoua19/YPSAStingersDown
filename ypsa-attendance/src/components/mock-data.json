@@ -1,0 +1,13 @@
+[
+  {
+    "StudentId": 1234567,
+    "FName": "Xiong",
+    "LName": "Moua",
+    "Date": "11/05/2022",
+    "Time": "11:56 AM",
+    "Reason": "Sick",
+    "Type": "Tardy",
+    "Status": "Confirmed"
+  }
+  
+]

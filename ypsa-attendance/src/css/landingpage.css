@@ -1,0 +1,148 @@
+.container{
+  background-color: azure;
+  height: 100vh;
+  width: 100vw;
+  display:grid;
+  grid-template-rows: 100px 500px  100px 100px;
+  grid-template-columns: 250px 600px;
+}
+.YPSAT{
+  margin-bottom: 15%;
+}
+.logout{
+  margin: 0;
+  position: absolute;
+  top: 95%;
+  left: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.dash{
+  background-color:#2A2A35;
+  /* row goes down*/
+  grid-row: 1 / 10;
+  /* column goes acrosss
+     start = 1 to  end = 2
+  */
+  grid-column: 1 / 2;
+  color:#E6E5FF;
+  text-align: center;
+  position: relative;
+}
+
+.logo{
+  background-color:#FFFFFF;
+  grid-column:  2/3;
+  /* yps image */
+  /* background: url(image.png); */
+}
+
+.info{
+  background-color: #FFFFFF;
+  grid-column: 3/4;
+  color:#000000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+  font-size: 20px;
+}
+
+.content{
+  background-color: #F6C798;
+  grid-row: 2/10;
+  grid-column: 2 / 4;
+  display:grid;
+  padding: 2.5% 2.5% 0.5% 2.5%;
+}
+
+.table-box{
+  background-color: #FFFFFF;
+  border-radius: 25px;
+}
+
+.search-box{
+  height:50px;
+  background-color: #E5E4FD;
+  align-items: center;
+  display:flex;
+  padding: 5px;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.search-text{
+  background-color: #FFFFFF;
+  height:30px;
+  width:15%;
+  border-radius: 5px;
+  outline:none;
+  border-style: none;
+  font-size: 18px;
+}
+
+.button{
+  height:30px;
+  width:55px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#export-button{
+  background-color: #3C3C4A;
+  border-color: #3C3C4A;
+}
+
+#add-button{
+  background-color: #EA964C;
+  border-color: #EA964C;
+
+}
+
+.button-area{
+  display: flex;
+  gap: 10px;
+}
+
+.info-table{
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width:100%;
+    
+}
+
+.info-table thead tr{
+  background-color: #F9FAFA;
+  color: #373737;
+  text-align: left;
+    
+}
+
+.info-table th,
+.info-table td{
+  padding: 12px 15px;
+}
+
+.info-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.info-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.info-table tbody tr:last-of-type {
+  border-bottom: 2px solid #F5F6F7;
+}
+
+.info-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
