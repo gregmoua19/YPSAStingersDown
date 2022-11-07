@@ -1,0 +1,85 @@
+:root {
+    --nav-icon-width: 50px;
+    --nav-border-width: 8px;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .page-container {
+    height: inherit;
+    display: flex;
+  }
+  
+  .main {
+    height: inherit;
+    padding: 0;
+    padding-left: var(--nav-border-width);
+    overflow-y: auto;
+  }
+  
+  .nav {
+    width: 250px;
+    height: inherit;
+    position: relative;
+    background-color: #262633;
+    transition: width 0.2s;
+    flex-shrink: 0;
+  }
+  
+  .nav--collapsed {
+    width: var(--nav-icon-width);
+  }
+  
+  .nav--collapsed .nav__label {
+    display: none;
+  }
+  
+  .nav__link {
+    display: flex;
+    align-items: center;
+    color: rgba(192, 192, 192, 0.75);
+    text-decoration: none;
+  }
+  
+  .nav__link:hover {
+    background-color: #f99335;
+  }
+  
+  .nav__icon-container {
+    width: var(--nav-icon-width);
+    height: var(--nav-icon-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .nav__label {
+    white-space: nowrap;
+  }
+  
+  .nav__border {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: var(--nav-border-width);
+    height: inherit;
+    background-color: #f99335;
+    transition: background-color 0.2s;
+    cursor: ew-resize;
+  }
+  
+  .nav__border:hover {
+    background-color: #cccccc;
+  }
+
+  .logout {
+    position: absolute;
+    top: 93%;
+  }
+  
