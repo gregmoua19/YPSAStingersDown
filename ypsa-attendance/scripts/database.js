@@ -2,7 +2,7 @@
 // Using CDN Firebase JS SDKs
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js'
 import { getDatabase, ref, set, get, child, remove } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js'
-import { getAuth } from 'https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js'
+import { getAuth } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {

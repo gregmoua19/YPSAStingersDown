@@ -14,7 +14,7 @@
   grid-row: 1 / 10;
   grid-column: 1 / 2;
   text-align: center;
-  position: relative;
+
 }
 
 .YPSAT{
@@ -27,9 +27,8 @@
 }
 
 .Div1{
-  background-color:white;
+  background-color:#FFC692;
   color: black; 
-  position: relative;
   text-align: right;
   grid-column: 2 /4;
 }

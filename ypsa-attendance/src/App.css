@@ -1,31 +1,9 @@
-h1{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  padding: 1px;
-  font-size: 36px;
-  text-align: center;
+.container{
+    display: flex;
+    margin-top: 10px;
 }
 
-h1:before, h1:after {
-  content:'';
-  width:180px;
-  border-bottom:1px #000 solid;
-  display:inline-block;
-  vertical-align:middle;
+.link{
+    text-decoration: none;
+    color: inherit;
 }
-h1:before {
-  margin-left:5%;}
-h1:after {
-  margin-right:5%;}
-
-  h3{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size:45px;
-    font-style:bold;
-    font-weight: 500;
-
-  }
-  
-
- 

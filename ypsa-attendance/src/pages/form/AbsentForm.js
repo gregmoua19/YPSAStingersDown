@@ -10,7 +10,7 @@ function App() {
       </div>
       
       <div className = "Div1">
-        <div className = "parent">Hello, Parent</div>
+        <div className = "parent"></div>
       </div>
 
       <div className = "Div3">

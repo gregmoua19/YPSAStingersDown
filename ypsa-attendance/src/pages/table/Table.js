@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import { Box, Typography } from '@mui/material';
 import { DataGrid } from '@mui/x-data-grid';
 import { createTheme, colors, ThemeProvider } from '@mui/material/';
@@ -8,7 +7,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 const theme = createTheme({
   palette: {
     background: {
-      default: 'ffa84c',
+      default: '#F6C798',
     },
   },
 });
