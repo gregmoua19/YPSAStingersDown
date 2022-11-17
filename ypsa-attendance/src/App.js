@@ -8,7 +8,6 @@ import Table from "./pages/table/Table"
 import Login from "./pages/login/Login.js"
 import AbsentForm from "./pages/form/AbsentForm.js"
 
-
 function App() {
   return (
     <div className = "App">
