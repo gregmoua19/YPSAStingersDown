@@ -1,7 +1,7 @@
 //#region Firebase
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js'
 import { getFirestore, collection, getDocs, setDoc, addDoc, doc, serverTimestamp, Timestamp, deleteDoc } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore.js'
- import { getAuth } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js'
+// import { getAuth } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js'
 
 const firebaseConfig = {
 	apiKey: 'AIzaSyA7SdBu2uR6zsdHFaWs0PGIVlHaugUnyMA',
@@ -15,7 +15,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig)
 const db = getFirestore(app)
-const auth = getAuth(app);
+// const auth = getAuth(app);
 //#endregion
 
 
