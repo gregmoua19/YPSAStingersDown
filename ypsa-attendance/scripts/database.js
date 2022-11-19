@@ -23,7 +23,8 @@ const auth = getAuth(app);
 //#region Exported global variables
 export {
 	app as FirebaseApp,
-	db as FirebaseDb
+	db as FirebaseDb,
+	auth as FirebaseAuth
 }
 
 //#endregion
