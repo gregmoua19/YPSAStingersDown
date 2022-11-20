@@ -1,7 +1,7 @@
 import './Login.css';
 import React from 'react';
 import ypsacademylogo from "../../images/ypsa-logo.png";
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 
 
 import { Container } from '../../components/styles/Container.styled'
@@ -18,7 +18,46 @@ import { Checkbox } from '@mui/material';
 import Button from '@mui/material/Button';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
-function Login() {
+import { FirebaseAuth } from '../../config/FirebaseDB';
+import { signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js'
+import {Dashboard} from '../dashboard/Dashboard'
+
+class Login extends React.Component {
+
+  login() {
+    document.onclick=function(){
+      const loginForm = document.querySelector('#login-form');  
+      console.log("testing");
+      loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // get user info
+        const email = loginForm['login-email'].value;
+        const password = loginForm['login-password'].value;
+        console.log(email, password);
+
+        // sign up the user
+        signInWithEmailAndPassword(FirebaseAuth, email, password)
+        .then(cred => {
+         console.log(cred);
+         console.log('Successfully Logged In');
+         window.location.href = '/Dashboard'
+
+        })
+        .catch((err) => {
+          console.log('Error: ' + err.toString());
+          //TODO: FIX SO THAT AN ERROR MESSAGE SHOWS WRONG EMAIL OR PASSWORD ONCE
+
+          //const message = <Alert severity="warning">Wrong Password or Email</Alert> 
+          const alert = document.createElement("Alert")
+          alert.innerHTML = "Wrong Email or Password"
+          document.getElementById('error-display').appendChild(alert);
+        })
+      }); 
+    }
+  }
+  
+render(){
   return (
     <div className="Login">
       <Container>
@@ -28,16 +67,23 @@ function Login() {
           <Title>Staff Login</Title>
 
           <div class="Login">
+          <form id="login-form">
             <IconTextField sx={{ width: 500, marginLeft: 7, marginTop: 2 }}
-              label="Email / User name"
+              type = "email"
+              id = "login-email"
+              label="Email"
               iconStart={<EmailIcon sx={{ color: "#000", fontSize: 25 }} />}
+              required
             />
             <IconTextField sx={{ width: 500, marginLeft: 7, marginTop: 2 }}
+              type = "password"
+              id = "login-password"
               label="Password"
               inputType="password"
               name="password"
               iconStart={<KeyIcon sx={{ color: "#000", fontSize: 25 }} />}
               iconEnd={<VisibilityIcon sx={{ color: "#000", fontSize: 25 }} />}
+              required
             />
             <br />
             <Checkbox sx={{ marginLeft: 6, color: "#b8b8b8", '&.Mui-checked': { color: "#d1d1d1" } }}
@@ -50,7 +96,7 @@ function Login() {
             <p
               style={{ fontSize: 13, marginLeft: 435, marginTop: -27 }}>Forgot Password?</p>
 
-            <Button
+            {/* <Button
               component={Link} to="/Dashboard"
               variant='contained'
               sx={{
@@ -64,7 +110,13 @@ function Login() {
               }}
             >
               LOGIN
-            </Button>
+            </Button> */}
+
+            {/*----- MAKE SO THAT BUTTON CHANGES COLOR ON HOVER OR ON CLICKED -----*/}
+            <button id = "btn" style={{ margin:60 , backgroundColor: '#F99335', width: 500, height: 45, fontWeight: 'bold'}} 
+            onClick={this.login}>Login</button>
+            </form>
+            <div id = 'error-display'></div>
           </div>
 
         </LeftPane>
@@ -80,8 +132,17 @@ function Login() {
     </div>
   );
 }
+}
 
 export default Login;
+
+// window.onclick=function(){
+//   const btn = document.getElementById('btn')
+//   btn.addEventListener('click', function onClick(){
+//     btn.style.backgroundColor = 'Blue'
+//   })    
+// }
+
 
 const IconTextField = ({ iconStart, iconEnd, InputProps, ...props }) => {
   return (
