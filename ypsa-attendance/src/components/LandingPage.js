@@ -3,8 +3,8 @@ import '../css/landingpage.css';
 import AddStudent from './AddStudent';
 import PopupContent from './PopupContent';
 import data from '../components/mock-data.json';
-import { DatabaseConnect } from '../scripts/firebase-connect';
-import {collection, getDocs, addDoc} from "firebase/firestore";
+// import { DatabaseConnect } from '../scripts/firebase-connect';
+import {collection, getDocs, addDoc} from "https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore.js";
 import user from '../assets/user.png'
 import ypsalogo from '../assets/ypsalogo.png'
 const LandingPage = () => {
@@ -61,18 +61,18 @@ const LandingPage = () => {
     const Time = newStudent.Time;
     const Reason = newStudent.Reason;
     const Status = newStudent.Status;
-    const addStudentToDatabase = async () =>{
-      await addDoc(studentsCollectionRef, {
-        StudentId,
-        LName,
-        FName,
-        Date,
-        Time,
-        Reason,
-        Status
-      })
-    }
-    addStudentToDatabase();
+    // const addStudentToDatabase = async () =>{
+    //   await addDoc(studentsCollectionRef, {
+    //     StudentId,
+    //     LName,
+    //     FName,
+    //     Date,
+    //     Time,
+    //     Reason,
+    //     Status
+    //   })
+    // }
+    // addStudentToDatabase();
   }
 
   const [studentTest, setTest] = useState({
@@ -85,7 +85,7 @@ const LandingPage = () => {
     Type:'',
     Status:'Not Confirmed'
   });
-  const studentsCollectionRef = collection(DatabaseConnect, "Students");
+  // const studentsCollectionRef = collection(DatabaseConnect, "Students");
 
   // useEffect(() =>{
   //   const getStudents = async () =>{

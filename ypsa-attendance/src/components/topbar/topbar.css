@@ -10,12 +10,15 @@
 li {
   list-style: none;
 }
+.links{
+  text-decoration: none;
+}
 
 .topbar{
   height: 10vh;
   line-height: 10vh;
   box-shadow: rgba(50, 50, 90, 0.20) 0 30px 30px -20px;
-  background-color: white;
+  background-color: #FFF;
   display: flex;
   align-items: center;
   justify-content: space-between;

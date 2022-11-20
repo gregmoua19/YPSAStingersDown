@@ -1,21 +1,46 @@
-import React from "react";
+import React, {useState} from "react";
 import "./topbar.css";
 import { Link } from "react-router-dom"
 import topbarlogo from "./topbarlogo.png"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import { Typography } from "@mui/material";
 
 const Topbar = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const openForms = Boolean(anchorEl)
+
+  const handleClick = (e) =>{
+    setAnchorEl(e.currentTarget)
+  };
+
+  const handleClose = () =>{
+    setAnchorEl(null);
+  }
+
   return (
     <div className="wrapper">
       <nav className='topbar'>
-      
         <img className="logo" src = {topbarlogo} alt = "Top Bar Logo" />
         <h3 className='title' > Attendance Tracker</h3>
         <ul className="nav-links">
-          <Link to='/Dashboard'><li>Dashboard</li></Link>
-          <Link to='/table'><li>Table</li></Link>
-          <Link to='/form'><li>Forms</li></Link>
-          <Link to='/'><li>Logout</li></Link>
+          <Link className = "links" to='/Dashboard'><li>Dashboard</li></Link>
+          <Link className = "links"to='/table'><li>Table</li></Link>
+          <Typography
+            aria-controls="forms-menu"
+            aria-haspopup="true"
+            aria-expanded={openForms ? 'true':undefined}
+            onClick={handleClick}
+          ><li>Forms</li></Typography>
+          <Menu id='forms-menu' anchorEl={anchorEl} open={openForms}
+            onClose={handleClose}
+          >
+            <MenuItem component={Link} to="/Form/EarlyDismissal"onClick={handleClose} id="earlyDismisal">Early Dismissal</MenuItem>
+            <MenuItem component={Link} to="/Form/AbsenceForm" onClick={handleClose} id="excusedAbsence">Excused Absence</MenuItem>
+            <MenuItem onClick={handleClose} id="late">Tardy</MenuItem>
+          </Menu>
+          <Link className = "links" to='/'><li>Logout</li></Link>
         </ul>
         <div className="topRight">
           <div className="topbarIconContainer">
@@ -28,28 +53,5 @@ const Topbar = () => {
   )
 }
 
-// export default function Topbar() {
-//   return (
-//     <div className="topbar">
-//       <div className="topbarWrapper">
-//         <div className="topLeft">
-//           <img className="logo" src = {topbarlogo} alt = "Top Bar Logo" />
-//           <span className="title"> YPSA Attendance Tracker</span> 
-//         </div>
-//         <div className="topMiddle">
-//           <div className="dashboardContainer">
-
-//           </div>
-//         </div>
-//         <div className="topRight">
-//           <div className="topbarIconContainer">
-//             <AccountCircleIcon />
-//           </div>
-//         </div>
-
-//       </div>
-//     </div>
-//   );
-// }
 
 export default Topbar
