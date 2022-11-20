@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
-import { DataGrid } from '@mui/x-data-grid';
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { createTheme, colors, ThemeProvider } from '@mui/material/';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -129,30 +129,34 @@ export default function DataGridDemo() {
         <Typography
           variant="h3"
           component="h3"
-          sx={{ textAlign: 'left', mt: 1, mb: 3 }}
+          sx={{ textAlign: 'left', mt: 1, mb: 3,}}
         >
           Attendance Table
         </Typography>
         <Box
-          display="flex"
-          justifyContent="center"
-          m="40px 0 0 0"
           height="75vh"
-          boxShadow="2"
-          borderRadius="20px"
+          borderRadius="6px"
           sx={{
             bgcolor: colors.grey[200],
+
+            "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
+              color: 'black',
+            },
           }}
         >
           <DataGrid
             rows={rows}
             columns={columns}
-            pageSize={5}
-            rowsPerPageOptions={[5]}
+            components={{Toolbar:GridToolbar}}
+            rowsPerPageOptions={[10, 20, 30]}
             checkboxSelection
             disableSelectionOnClick
+            editMode='row'
+            disableColumnSelector
+            disableDensitySelector
+            disableColumnMenu
             experimentalFeatures={{ newEditingApi: true }}
-            bgcolor="#404040"
+            
           />
         </Box>
       </Box>
