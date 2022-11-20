@@ -19,7 +19,7 @@ import Button from '@mui/material/Button';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
 import { FirebaseAuth } from '../../config/FirebaseDB';
-import { signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js'
+import { signInWithEmailAndPassword } from 'firebase/auth'
 import {Dashboard} from '../dashboard/Dashboard'
 
 class Login extends React.Component {

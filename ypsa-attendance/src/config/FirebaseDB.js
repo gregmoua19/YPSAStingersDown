@@ -1,6 +1,6 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js'
-import { getDatabase, ref, set, get, child, remove } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js'
-import { getAuth } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js'
+import { initializeApp } from 'firebase/app'
+import { getDatabase, ref, set, get, child, remove } from 'firebase/database'
+import { getAuth } from 'firebase/auth'
 
 
 // Your web app's Firebase configuration

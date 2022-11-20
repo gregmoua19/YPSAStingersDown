@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './AbsentForm.css';
 import { db } from '../../scripts/database';
-import {collection, addDoc} from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore.js';
+import {collection, addDoc} from 'firebase/firestore';
 
 function AbsentForm() {
 

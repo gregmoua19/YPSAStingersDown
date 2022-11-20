@@ -1,7 +1,7 @@
 //#region Firebase
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js'
-import { getFirestore, collection, getDocs, setDoc, addDoc, doc, serverTimestamp, Timestamp, deleteDoc } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore.js'
- import { getAuth } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js'
+import { initializeApp } from 'firebase/app'
+import { getFirestore, collection, getDocs, setDoc, addDoc, doc, serverTimestamp, Timestamp, deleteDoc } from 'firebase/firestore'
+ import { getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
 	apiKey: 'AIzaSyA7SdBu2uR6zsdHFaWs0PGIVlHaugUnyMA',
