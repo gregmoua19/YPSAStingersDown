@@ -83,17 +83,17 @@ function EarlyDismissal() {
         <div className = "FLNameGrid">
           <div className = "Fname">
             <label>First Name</label>
-            <input type="text" id="firstName" name="Name" className = "input" onChange={handleAddStudentChange}></input>
+            <input type="text" id="firstName" name="Name" placeholder="Student First Name" className = "input" onChange={handleAddStudentChange}></input>
           </div>
 
           <div className = "Fname">
             <label>Last Name</label>
-            <input type="text" id="lastName" name="Name" className = "input" onChange={handleAddStudentChange}></input>
+            <input type="text" id="lastName" name="Name" placeholder="Student Last Name"className = "input" onChange={handleAddStudentChange}></input>
           </div>
 
           <div className = "Fname">
             <label>Time Dismissed</label>
-            <input type="text" id="timeDismissed" name="Name" className = "input" onChange={handleAddStudentChange}></input>
+            <input type="text" placeholder="Enter time dismissed" id="timeDismissed" name="Name" className = "input" onChange={handleAddStudentChange}></input>
           </div>
         </div>
 

@@ -11,6 +11,7 @@
 #freeform{
   resize: none;
 }
+
 .Div2{
   background-color:#262633;
   color:#E6E5FF;
@@ -71,6 +72,7 @@
   border-color: #A1A9B8;
   border:1px;
   min-height: 25px;
+  resize: none;
 }
 
 .FLNameGrid{

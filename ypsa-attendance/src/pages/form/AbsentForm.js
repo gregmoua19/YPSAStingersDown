@@ -67,9 +67,9 @@ function AbsentForm() {
   return (
     <div className = "Container">
       <div className = "Div2">
-          <div className = "YPSAT">YPS Attendance Tracker</div>
+          {/* <div className = "YPSAT">YPS Attendance Tracker</div>
           <div>Home</div>
-          <div className = "logout">Logout</div>
+          <div className = "logout">Logout</div> */}
       </div>
       
       <div className = "Div1">
@@ -87,12 +87,12 @@ function AbsentForm() {
         <div className = "FLNameGrid">
           <div className = "Fname">
             <label>First Name</label>
-            <input type="text" id="FirstName" name="Name" className = "input" onChange={studentInput}></input>
+            <input type="text" id="FirstName" name="Name" placeholder="Student First Name" className = "input" onChange={studentInput}></input>
           </div>
         
           <div className = "Fname">
             <label>Last Name</label>
-            <input type="text" id="LastName" name="Name" className = "input" onChange={studentInput}></input>
+            <input type="text" id="LastName" name="Name" className = "input" placeholder="Student First Name" onChange={studentInput}></input>
           </div>
         
           <div className = "Fname">
@@ -118,7 +118,7 @@ function AbsentForm() {
 
         <div className = "Fname">
           <label>Comment</label>
-          <textarea id="CommentBox" name="freeform" cols="50" rows="6" className = "input" onChange={studentInput}  >Comment</textarea>
+          <textarea id="CommentBox" name="freeform" cols="50" rows="6" className = "input" onChange={studentInput}  placeholder="Type in comments"></textarea>
         </div>
 
         <div className = "FLNameGrid">
