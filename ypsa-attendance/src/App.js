@@ -7,6 +7,7 @@ import Dashboard from "./pages/dashboard/Dashboard"
 import Table from "./pages/table/Table"
 import Login from "./pages/login/Login.js"
 import AbsentForm from "./pages/form/AbsentForm.js"
+import EarlyDismissal from './pages/form/EarlyDismissal'
 
 function App() {
   return (
@@ -24,8 +25,11 @@ function App() {
                 <Route path='/Table' compoent={Table} exact>
                     <Table />
                 </Route>
-                <Route path='/Form' compoent={AbsentForm} exact>
+                <Route path='/Form/AbsenceForm' compoent={AbsentForm} exact>
                     <AbsentForm />
+                </Route>
+                <Route path='/Form/EarlyDismissal' compoent={EarlyDismissal} exact>
+                  <EarlyDismissal />
                 </Route>
             </div>
 
