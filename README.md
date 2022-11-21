@@ -5,6 +5,13 @@ CSC 190 Stingers Down Attendance Tracker
 # About
 YPSA Attendence Tracker is a app that tracks the attendance of the students and staff at YPSA Academy. It generates graphs to show how many students or staff members were late, got early dismissals or absence over the semester.
 
+# Built With
+* [![React][React.js]][React-url]
+* [![Firebase][Firebase.js]][Firebase-url]
+* [![Mui][Mui.js]][Mui-url]
+* [![Figma][Figma.js]][Figma-url]
+* [![Node.js][Node.js]][Node-url]
+
 
 # Firebase
 Firebase is a app development platform that helps build and grow apps. It is backed by Google and trusted by millions of businesses around the world. It is used in this project to host our project, creates the database for the student and staff information through the Firestore database.
@@ -56,3 +63,14 @@ firebase deploy
 ```
 
 [NVM]: https://github.com/coreybutler/nvm-windows
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Firebase.js]: https://img.shields.io/badge/Firebase-FFFFFF?style=for-the-badge&logo=firebase&logoColor=FFCA28
+[Firebase-url]: https://firebase.google.com/
+[Mui.js]: https://img.shields.io/badge/Mui-FFFFFF?style=for-the-badge&logo=MUI&logoColor=007FFF
+[Mui-url]: https://mui.com/
+[Figma.js]: https://img.shields.io/badge/Figma-111111?style=for-the-badge&logo=Figma&logoColor=FFFFFF
+[Figma-url]: https://www.figma.com
+[Node.js]: https://img.shields.io/badge/Node.js-233056?style=for-the-badge&logo=Node.js&logoColor=689F63
+[Node-url]: https://nodejs.org/en/
+
