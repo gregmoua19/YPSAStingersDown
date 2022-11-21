@@ -1,8 +1,24 @@
 # StingersDownYPSA
-CSC 190 Stingers Down Attendance System
+
+CSC 190 Stingers Down Attendance Tracker
+![alt text](./ypsa-attendance/src/images/YPSA-banner.png)
+# About
+YPSA Attendence Tracker is a app that tracks the attendance of the students and staff at YPSA Academy. It generates graphs to show how many students or staff members were late, got early dismissals or absence over the semester.
+
 
 # Firebase
-Firebase is used in this project to deploy, use the Realtime Database, and to test using `serve`.
+Firebase is a app development platform that helps build and grow apps. It is backed by Google and trusted by millions of businesses around the world. It is used in this project to host our project, creates the database for the student and staff information through the Firestore database.
+
+# Features
+### Current Features:
+- Export data to CSV file
+- Adding data from forms to the database 
+- Authentication Login
+
+### Future features to implement
+- Deleting data from the database
+- Form validation /  Form credibility 
+- Generate graph trends from the data from the database
 
 ## Installation
 Use NPM (recommended to use NVM to get NPM from here: [NVM])
@@ -23,7 +39,11 @@ firebase login
 You can use `firebase projects:list` to check if you are logged in correctly.
 
 ## Testing
-You can test the project by using the command:
+The build must be updated after any code update before it can be viewed run:
+```powershell
+npm run build
+```
+You can view how what the project looks like before deploying by using the command:
 ```powershell
 firebase serve
 ```
