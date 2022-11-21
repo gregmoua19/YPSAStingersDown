@@ -202,7 +202,7 @@ function addNewStudent(id, fName, mName, lName)
  */
 function addEntry(id, entry)
 {
-	return new Promise((reject, resolve) => {
+	return new Promise((resolve, reject) => {
 		id = id.trim()
 		getStudentByID(id).then(() =>
 		{
