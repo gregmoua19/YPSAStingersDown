@@ -38,7 +38,7 @@ const Topbar = () => {
           >
             <MenuItem component={Link} to="/Form/EarlyDismissal"onClick={handleClose} id="earlyDismisal">Early Dismissal</MenuItem>
             <MenuItem component={Link} to="/Form/AbsenceForm" onClick={handleClose} id="excusedAbsence">Excused Absence</MenuItem>
-            <MenuItem onClick={handleClose} id="late">Tardy</MenuItem>
+            <MenuItem component={Link} to="/Form/TardyForm" onClick={handleClose} id="late">Tardy</MenuItem>
           </Menu>
           
           <Link className = "links" to='/'><li>Logout</li></Link>
