@@ -1,31 +1,57 @@
-# StingersDownYPSA
-
-CSC 190 Stingers Down Attendance Tracker
 ![alt text](./ypsa-attendance/src/images/YPSA-banner.png)
+
 # About
-YPSA Attendence Tracker is a app that tracks the attendance of the students and staff at YPSA Academy. It generates graphs to show how many students or staff members were late, got early dismissals or absence over the semester.
+YPSA Attendence Tracker will be used day to day to keep track of student and staff attendance at school. Not only will the software provide a better way to track attendance, but it will aim to calculate trends and statistics on excused absences, tradies and early dismissals. The client hopes to utilize this information to potentially make changes or take action to solve excessive absence and tardiness.
+
+# Prototype Images
+![gif](https://user-images.githubusercontent.com/89866629/205567445-dc35c600-51a7-47e9-8204-b85057c1ba51.gif)
+
+# Milestone Timeline
+### 11/20/22
+- [x] Basic UI implementation 
+- [x] Export data to CSV file 
+- [x] Adding data from forms to the database 
+- [x] Authentication login 
+
+### 2/05/2023 - Sprint 5
+- [ ] Admin table quick search bar
+- [ ] Form validation/credibility 
+- [ ] Create admin table entry method
+- [ ] Delete database data method
+- [ ] Admin Table to Early Dimissal/Excused Absence/Tardie Form Routes
+- [ ] User input data validation
+- [ ] Functionable logout
+- [ ] Firebase data validation
+
+### 2/19/2023 - Sprint 6
+- [ ] Generate graph trends from the data from the database
+- [ ] Firebase advanced query functions
+- [ ] Firebase authentication method for parents/guardians
+
+### 3/05/2023 - Sprint 7
+- [ ] Password reset method
+- [ ] Admin action logs
+- [ ] Web app documentation page
+- [ ] Account setting configuartion
+- [ ] Test cases to validate login
+- [ ] Test cases to validate user entries
+
+### 3/20/2023 - Sprint 8
+- [ ] Deploy web application
+- [ ] Host web application
+
+### 4/03/2023 - Sprint 9
+- TBD
 
 # Built With
-* [![React][React.js]][React-url]
-* [![Firebase][Firebase.js]][Firebase-url]
+* [![React][React.js]][React-url] 
+* [![Firebase][Firebase.js]][Firebase-url] 
 * [![Mui][Mui.js]][Mui-url]
 * [![Figma][Figma.js]][Figma-url]
 * [![Node.js][Node.js]][Node-url]
 
-
 # Firebase
 Firebase is a app development platform that helps build and grow apps. It is backed by Google and trusted by millions of businesses around the world. It is used in this project to host our project, creates the database for the student and staff information through the Firestore database.
-
-# Features
-### Current Features:
-- Export data to CSV file
-- Adding data from forms to the database 
-- Authentication Login
-
-### Future features to implement
-- Deleting data from the database
-- Form validation /  Form credibility 
-- Generate graph trends from the data from the database
 
 ## Installation
 Use NPM (recommended to use NVM to get NPM from here: [NVM])
