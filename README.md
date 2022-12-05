@@ -50,7 +50,7 @@ YPSA Attendence Tracker will be used day to day to keep track of student and sta
 * [![Figma][Figma.js]][Figma-url]
 * [![Node.js][Node.js]][Node-url]
 
-# Firebase
+# Developer Instructions - Firebase
 Firebase is a app development platform that helps build and grow apps. It is backed by Google and trusted by millions of businesses around the world. It is used in this project to host our project, creates the database for the student and staff information through the Firestore database.
 
 ## Installation
